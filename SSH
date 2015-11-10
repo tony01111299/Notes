@@ -1,0 +1,13 @@
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+
+# Attempts to ssh to GitHub
+ssh -T git@github.com
