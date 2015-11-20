@@ -1,0 +1,8 @@
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+git clone HTTPS_CLONE
+cd FOLDER
+git add FILE
+git commit -m MESSAGE
+git push origin master
