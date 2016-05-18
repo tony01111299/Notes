@@ -1,4 +1,5 @@
 Makefile part:
+
 all:
   g++ main.cpp -lglut -lGL
 
