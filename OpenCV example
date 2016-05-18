@@ -15,7 +15,7 @@ using namespace std;
 int main()
 {
     Mat image;
-    image = imread("aqua_smile.jpg"); // Read the file
+    image = imread("example.jpg"); // Read the file
 
     if(!image.data) // Check for invalid input
     {
